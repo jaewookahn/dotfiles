@@ -1,0 +1,79 @@
+# Version:
+# flexget -V --> version 1.2.60 on 1/21/2014
+
+# Run as deamon / cron
+# @reboot /usr/local/bin/flexget daemon start -d
+
+# http://flexget.com/wiki/Configuration
+# flexget check
+# flexget --test execute
+
+# common torrent rss feed
+# http://www.torlock.com/television/rss.xml             - TorLock (TV)
+# http://torrentz.eu/feed_verified?q=tv                 - Torrentz (Verified only, TV)
+# http://torrentz.eu/feed?q=books+comics                - Torrentz (Good only, ComicBooks)
+# http://ezrss.it/feed/                                 - EZRSS
+# http://showrss.karmorra.info/feeds/all.rss            - Karmorra (All)
+# http://rss.bt-chat.com/?group=3                       - BT-Chat (EZTV)
+# https://rss.thepiratebay.se/208                       - The Pirate Bay (Highres - TV shows)
+# http://www.nyaa.se/?page=rss&cats=1_37&filter=2       - Nyaa Anime English Translated (Trusted Only)
+# http://www.nyaa.se/?page=rss&cats=2_12&filter=2       - Nyaa Manga English Translated (Trusted Only)
+
+tasks:
+# http://flexget.com/wiki/Qualities#CommonRequirements
+  mytvshows:
+    rss: http://torrentz.eu/feed_verified?q=tv
+    series:
+      - 'Arrow':
+          quality: hdtv <720p
+      - 'The Blacklist':
+          quality: hdtv <720p
+      - 'Castle':
+          quality: hdtv <720p
+      - 'Defiance':
+          quality: hdtv <720p
+      - 'Falling Skies':
+          quality: hdtv <720p
+      - 'The Flash':
+          quality: hdtv <720p
+      - 'Game of Thrones':
+          quality: hdtv <720p
+      - 'Scorpion':
+          quality: hdtv <720p
+      - 'Under the Dome':
+          quality: hdtv <720p
+      - 'The Walking Dead':
+          quality: hdtv <720p
+      - 'White Collar':
+          quality: hdtv <720p
+      - 'Z Nation':
+          quality: hdtv <720p
+    download: ~/Downloads/
+
+  kickasstorrent:
+    rss: http://kickass.to/usearch/dual+survival/?rss=1
+    series:
+      - 'Dual Survival':
+          quality: hdtv <720p
+    download: ~/Downloads/
+
+  myanimeshows:
+    rss: http://www.nyaa.se/?page=rss&cats=1_37&filter=2
+    series:
+      - '[gg] Shingeki no Kyojin'
+      - '[HorribleSubs] Naruto Shippuuden':
+          quality: 720p
+    download: ~/Downloads/
+
+  mymangalist:
+    rss: http://www.nyaa.se/?page=rss&cats=2_12&filter=2
+    series:
+      - 'Naruto'
+    download: ~/Downloads/
+
+  mycomiclist:
+    rss: http://torrentz.eu/feed?q=books+comics
+    series:
+      - 'The Walking Dead Digital'
+    download: ~/Downloads/
+
