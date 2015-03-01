@@ -4,4 +4,4 @@
 # Allowed Files
 !.gitignore
 !.nanorc
-!.i3
+!.i3/config
