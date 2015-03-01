@@ -3,3 +3,4 @@
 
 # Allowed Files
 !.gitignore
+!.i3
