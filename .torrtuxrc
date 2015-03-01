@@ -1,0 +1,13 @@
+#Deluge
+#torrent_client = deluge
+
+#Transmission (replace transmission-cli by transmission-gtk, -qt, etc. if needed
+#torrent_client = transmission-cli
+torrent_client = "transmission-remote -a"
+
+#Rtorrent
+#torrent_client = rtorrent
+
+#Vuze
+#torrent_client = vuze
+

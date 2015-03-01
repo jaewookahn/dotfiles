@@ -1,0 +1,314 @@
+! < -- use this to comment not #
+! to reload
+! xrdb -load ~/.Xresources
+! {{{ YeahConsole Settings
+!!yeahconsole*term:xterm
+!yeahconsole*term:xterm
+!yeahconsole*consoleHeight:25
+!yeahconsole*toggleKey:None+grave
+!yeahconsole*keyFull:Control+grave
+!yeahconsole*background:#000000
+!yeahconsole*foreground:#E6E3E6
+!yeahconsole*cursorColor:#E6E3E6
+!yeahconsole*transparent:true
+!yeahconsole*shading:40
+!yeahconsole*restart:1
+!yeahconsole*faceName:Terminus:style=Regular:size=18
+!yeahconsole*metaSendsEscape:true
+!yeahconsole*aniDelay: 0
+! }}}
+! {{{ Xterm Settings
+!xterm*transparent:true
+!xterm*shading:40
+! }}}
+! {{{ Tango Color Theme URxvt
+!URxvt*color0:  rgb:2e2e/3434/3636
+!URxvt*color1:  rgb:cccc/0000/0000
+!URxvt*color2:  rgb:4e4e/9a9a/0606
+!URxvt*color3:  rgb:c4c4/a0a0/0000
+!URxvt*color4:  rgb:3434/6565/a4a4
+!URxvt*color5:  rgb:7575/5050/7b7b
+!URxvt*color6:  rgb:0606/9820/9a9a
+!URxvt*color7:  rgb:d3d3/d7d7/cfcf
+!URxvt*color8:  rgb:5555/5757/5353
+!URxvt*color9:  rgb:efef/2929/2929
+!URxvt*color10: rgb:8a8a/e2e2/3434
+!URxvt*color11: rgb:fcfc/e9e9/4f4f
+!URxvt*color12: rgb:7272/9f9f/cfcf
+!URxvt*color13: rgb:adad/7f7f/a8a8
+!URxvt*color14: rgb:3434/e2e2/e2e2
+!URxvt*color15: rgb:eeee/eeee/ecec
+! }}}
+! {{{ Tango Color Theme xterm
+!xterm*color0:  rgb:2e2e/3434/3636
+!xterm*color1:  rgb:cccc/0000/0000
+!xterm*color2:  rgb:4e4e/9a9a/0606
+!xterm*color3:  rgb:c4c4/a0a0/0000
+!xterm*color4:  rgb:3434/6565/a4a4
+!xterm*color5:  rgb:7575/5050/7b7b
+!xterm*color6:  rgb:0606/9820/9a9a
+!xterm*color7:  rgb:d3d3/d7d7/cfcf
+!xterm*color8:  rgb:5555/5757/5353
+!xterm*color9:  rgb:efef/2929/2929
+!xterm*color10: rgb:8a8a/e2e2/3434
+!xterm*color11: rgb:fcfc/e9e9/4f4f
+!xterm*color12: rgb:7272/9f9f/cfcf
+!xterm*color13: rgb:adad/7f7f/a8a8
+!xterm*color14: rgb:3434/e2e2/e2e2
+!xterm*color15: rgb:eeee/eeee/ecec
+! }}}
+! {{{ Molokai theme xterm
+!*xterm*background: #101010
+!*xterm*foreground: #d0d0d0
+!*xterm*cursorColor: #d0d0d0
+!*xterm*color0: #101010
+!*xterm*color1: #960050
+!*xterm*color2: #66aa11
+!*xterm*color3: #c47f2c
+!*xterm*color4: #30309b
+!*xterm*color5: #7e40a5
+!*xterm*color6: #3579a8
+!*xterm*color7: #9999aa
+!*xterm*color8: #303030
+!*xterm*color9: #ff0090
+!*xterm*color10: #80ff00
+!*xterm*color11: #ffba68
+!*xterm*color12: #5f5fee
+!*xterm*color13: #bb88dd
+!*xterm*color14: #4eb4fa
+!*xterm*color15: #d0d0d0
+! }}}
+! {{{ Xterm Paste Hotkeys
+! http://blog.ssokolow.com/archives/2011/05/01/modernizing-xterms-paste/
+! Scrolling:
+!   Scroll Wheel
+!   Shift-PgUp/PgDn
+!
+! Copy/Paste:
+!   Mouse-Select        : Copy to PRIMARY
+!   Shift + Mouse-Select: Copy to CLIPBOARD
+!
+!   Middle-Click        : Paste from PRIMARY
+!   Shift + Middle-Click: Paste from CLIPBOARD
+!
+!   Ctrl+Shift+V        : Paste from CLIPBOARD
+!   Ctrl+Alt+Shift+V    : Paste from PRIMARY
+!
+
+! More Konsole/Yakuake-like keybindings:
+*VT100.Translations: #override \
+                    Shift <Key>Up:              scroll-back(1) \n\
+                    Shift <Key>Down:            scroll-forw(1) \n\
+                    ~Meta Shift Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+                     Meta Shift Ctrl <Key>V:    insert-selection(PRIMARY) \n\
+                    ~Shift <Btn1Up>:            select-end(PRIMARY, CUT_BUFFER0) \n\
+                     Shift <Btn1Up>:            select-end(CLIPBOARD, CUT_BUFFER1) \n\
+                    ~Shift ~Ctrl ~Meta <Btn2Up>:insert-selection(PRIMARY, CUT_BUFFER0) \n\
+                     Shift ~Ctrl ~Meta <Btn2Up>:insert-selection(CLIPBOARD, CUT_BUFFER1)
+! }}}
+
+
+! http://yorikvanhavre.deviantart.com/art/urxvt-tango-theme-113968183
+!urxvt*foreground: #f2f2f2
+!urxvt*background: #101010
+!urxvt*color0: #101010
+!urxvt*color1: #f13a21
+!urxvt*color2: #93f91d
+!urxvt*color3: #ffd00a
+!urxvt*color4: #004f9e
+!urxvt*color5: #ec0048
+!urxvt*color6: #2aa7e7
+!urxvt*color7: #f2f2f2
+!urxvt*color8: #1d202f
+!urxvt*color9: #ff361e
+!urxvt*color10: #ffc005
+!urxvt*color11: #93ff00
+!urxvt*color12: #0071ff
+!urxvt*color13: #ef0051
+!urxvt*color14: #4bb8fd
+!urxvt*color15: #a020f0
+!!urxvt*transparent: true
+!urxvt*shading: 50
+!urxvt*fading: 50
+!urxvt*font: xft:Bitstream\ Vera\ Sans\ Mono:style=roman:pixelsize=16
+!urxvt*scrollBar: false
+
+
+
+
+! include ~/.termcolors/astromouse
+! include ~/.termcolors/belge
+! include ~/.termcolors/cottonmouse
+! include ~/.termcolors/dark
+! include ~/.termcolors/darkcourses
+! include ~/.termcolors/dc1
+! include ~/.termcolors/dc2
+! include ~/.termcolors/dc3
+! include ~/.termcolors/dc4
+! include ~/.termcolors/desaturated
+! include ~/.termcolors/doomcide
+! include ~/.termcolors/dotshare
+! include ~/.termcolors/garbeam
+! include ~/.termcolors/getfresh
+! include ~/.termcolors/gray
+! include ~/.termcolors/grey
+! include ~/.termcolors/hund
+! include ~/.termcolors/jessicamouse
+! include ~/.termcolors/julie
+! include ~/.termcolors/lich
+! include ~/.termcolors/light
+! include ~/.termcolors/lightr
+! include ~/.termcolors/matrix
+! include ~/.termcolors/meyithi
+! include ~/.termcolors/mikado
+! include ~/.termcolors/milomouse
+! include ~/.termcolors/mirodark
+! include ~/.termcolors/mousemod
+! include ~/.termcolors/nucolors
+! include ~/.termcolors/obliviousgmn
+! include ~/.termcolors/phrakture
+! include ~/.termcolors/pinky
+! include ~/.termcolors/rasi
+! include ~/.termcolors/samtole
+! include ~/.termcolors/sexcolors
+! include ~/.termcolors/sider
+! include ~/.termcolors/simulacra
+! include ~/.termcolors/solarized
+! include ~/.termcolors/tango
+! include ~/.termcolors/technicolor-variant
+! include ~/.termcolors/technobass
+! include ~/.termcolors/test
+! include ~/.termcolors/tomorrow-night-blue
+! include ~/.termcolors/vimbrant
+! include ~/.termcolors/zenburn
+*background: #002b36
+*foreground: #657b83
+*cursorColor: #93a1a1
+
+!! black dark/light
+*color0: #073642
+*color8: #002b36
+
+!! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+
+!! green dark/light
+*color2: #859900
+*color10: #586e75
+
+!! yellow dark/light
+*color3: #b58900
+*color11: #657b83
+
+!! blue dark/light
+*color4: #268bd2
+*color12: #839496
+
+!! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+
+!! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
+
+!! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
+
+
+
+! ==========================================================
+! NEW
+! ===========================================================
+
+
+! https://gist.github.com/menski/2176539
+! http://crunchbang.org/forums/viewtopic.php?id=9935
+! Cursor theme
+xcursor.theme:            Vanilla-DMZ
+ 
+! URxvt config
+URxvt*termName:           rxvt-16color
+
+! URxvt.depth: 32
+! URxvt.background: [50]#000000
+
+! Native transparency
+! https://wiki.archlinux.org/index.php/rxvt-unicode#Native_transparency
+URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 10
+
+URxvt.scrollBar:          off
+URxvt*font:               xft:Monospace:pixelsize=18
+URxvt*boldFont:           xft:Monospace:bold:pixelsize=18
+URxvt.internalBorder:     0
+URxvt*selectToClipboard:  true
+URxvt*saveLines:          10000
+
+! copy paste support
+! require: urxvt-perls
+! https://github.com/muennich/urxvt-perls
+URxvt.perl-ext-common:    default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-y:         perl:clipboard:copy
+URxvt.keysym.M-p:         perl:clipboard:paste
+URxvt.keysym.M-C-p:       perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+URxvt.keysym.M-Escape:    perl:keyboard-select:activate
+URxvt.keysym.M-u:         perl:url-select:select_next
+URxvt.keysym.M-s:         perl:keyboard-select:search
+
+
+! URxvt.perl-ext-common:    default,matcher,tabbedex,searchable-scrollback,clipboard
+URxvt.urlLauncher:        /usr/bin/chromium
+URxvt.matcher.button:     1
+URxvt.tabbed.tabbar-fg:   8
+URxvt.tabbed.tabbar-bg:   0
+URxvt.tabbed.tab-fg:      2
+URxvt.tabbed.tab-bg:      0
+URxvt.tabbed.new-button:  no
+URxvt.tabbed.title:       no
+ 
+! Tango color palette
+URxvt*background:         #2e3436
+URxvt*foreground:         #eeeeec
+URxvt*cursorColor:        #8ae234
+! foreground color for underline
+URxvt*colorUL:            #8ae234
+! line color for underline
+URxvt*underlineColor:     #92659a
+! black dark/light
+URxvt*color0:             #2e3436
+URxvt*color8:             #6e706b
+! red dark/light
+URxvt*color1:             #cc0000
+URxvt*color9:             #ef2929
+! green dark/light
+URxvt*color2:             #4e9a06
+URxvt*color10:            #8ae234
+! yellow dark/light
+URxvt*color3:             #edd400
+URxvt*color11:            #fce94f
+! blue dark/light
+URxvt*color4:             #3465a4
+URxvt*color12:            #729fcf
+! magenta dark/light
+URxvt*color5:             #92659a
+URxvt*color13:            #c19fbe
+! cyan dark/light
+URxvt*color6:             #07c7ca
+URxvt*color14:            #63e9e9
+! white dark/light
+URxvt*color7:             #d3d7cf
+URxvt*color15:            #eeeeec
+ 
+! xscreensaver
+xscreensaver.fade:        false
+xscreensaver.unfade:      false
+
+

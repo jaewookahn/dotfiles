@@ -6,6 +6,19 @@
 !.cmus/*.theme
 !.cmus/themes-screenshot
 !.cmus/themes-screenshot/*
+!.config
+!.config/quicktile.cfg
+!.config/htop
+!.config/htop/htoprc
+!.config/keepassc
+!.config/keepassc/config
+!.config/MusicBrainz
+!.config/MusicBrainz/Picard
+!.config/MusicBrainz/Picard/Picard.conf
+!.config/MusicBrainz/Picard/plugins
+!.config/MusicBrainz/Picard/plugins/*
+!.config/periscope
+!.config/periscope/config
 !.i3
 !.i3/*
 !.flexget
@@ -13,5 +26,19 @@
 
 
 # Allowed Config
+!.agignore
+!.aliases_gotbletu
+!.bashrc
 !.gitignore
+!.inputrc
 !.nanorc
+!.pastebinit.xml
+!.skippy-xd.rc
+!.tmux.conf
+!.torrtuxrc
+!.urlview
+!.vimrc
+!.zshrc
+!.Xresources
+!index.html
+
