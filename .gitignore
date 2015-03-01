@@ -1,10 +1,17 @@
 # Ignore everything
 *
 
-# Allowed Files
-!.gitignore
-!.nanorc
+# Allowed Folders/Files
+!.cmus
+!.cmus/*.theme
+!.cmus/themes-screenshot
+!.cmus/themes-screenshot/*
 !.i3
 !.i3/*
 !.flexget
-!.flexget/*
+!.flexget/config.yml
+
+
+# Allowed Config
+!.gitignore
+!.nanorc
